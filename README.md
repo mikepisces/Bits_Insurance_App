@@ -1,6 +1,12 @@
-# BookStore
+# InsuranceManagment APP
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+
+##Prerequisites
+1. Install node.js
+2. Install Visual studio Code 
+Use below link for details
+https://ccbill.com/kb/install-angular-on-windows
 
 ## Development server
 
