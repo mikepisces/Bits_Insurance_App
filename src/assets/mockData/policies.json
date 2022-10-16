@@ -1,0 +1,107 @@
+[
+    {
+        "policyPlanId": 1,
+        "policyPlanName": "Star Term Insurance Plan 2015",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 10,
+        "commissionPercent": 2.5
+      },
+      {
+        "policyPlanId": 2,
+        "policyPlanName": "Star ULIP Plan 2011",
+        "policyPlanType": "Unit Linked Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 3,
+        "policyPlanName": "Star Term Insurance Plan 2012",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 4,
+        "policyPlanName": "Star ULIP Plan 2017",
+        "policyPlanType": "Unit Linked Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 5,
+        "policyPlanName": "Star Term Insurance Plan 2018",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 6,
+        "policyPlanName": "Star Whole Insurance 2021",
+        "policyPlanType": "Whole Insurance Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 7,
+        "policyPlanName": "Star Term Insurance Plan 2015",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 10,
+        "commissionPercent": 2.5
+      },
+      {
+        "policyPlanId": 8,
+        "policyPlanName": "Star ULIP Plan 2011",
+        "policyPlanType": "Unit Linked Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 9,
+        "policyPlanName": "Star Term Insurance Plan 2012",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 10,
+        "policyPlanName": "Star ULIP Plan 2017",
+        "policyPlanType": "Unit Linked Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 11,
+        "policyPlanName": "Star Term Insurance Plan 2018",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 12,
+        "policyPlanName": "Star Whole Insurance 2021",
+        "policyPlanType": "Whole Insurance Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 13,
+        "policyPlanName": "Star ULIP Plan 2017",
+        "policyPlanType": "Unit Linked Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 14,
+        "policyPlanName": "Star Term Insurance Plan 2018",
+        "policyPlanType": "Term Life Insurance",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      },
+      {
+        "policyPlanId": 15,
+        "policyPlanName": "Star Whole Insurance 2021",
+        "policyPlanType": "Whole Insurance Plan",  
+        "policyPlanTerm": 35,
+        "commissionPercent": 1.5 
+      }
+]
