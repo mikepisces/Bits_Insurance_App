@@ -5,6 +5,7 @@ import { InsuranceComponent } from './admin/insurance/insurance.component';
 
 const routes: Routes = [
    { path: 'admin/view-insurance', component: InsuranceComponent },
+   { path: 'admin/users', component: UsersComponent },
 ];
 
 @NgModule({

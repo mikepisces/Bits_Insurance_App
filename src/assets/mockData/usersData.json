@@ -1,0 +1,30 @@
+[
+    {
+        "customerId":1 ,
+        "firstName":"Josephine",
+        "lastName":"Darakjy" ,
+        "mobileNumber": "810-292-9388",
+        "landlineNumber": "810-374-9840",  
+        "address": "4 B Blue Ridge Blvd",
+        "city": "Brighton",
+        "pinCode": "48116",
+        "state": "MI",
+        "dateOfBirth": "1962-01-15",
+        "email": "josep_d@darakjy.org",
+        "password": "********" 
+      },
+      {
+        "customerId":2 ,
+        "firstName":"Alex",
+        "lastName":"Fe" ,
+        "mobileNumber": "810-292-9388",
+        "landlineNumber": "810-374-9840",  
+        "address": "4 B Blue Ridge Blvd",
+        "city": "Brighton",
+        "pinCode": "48116",
+        "state": "MI",
+        "dateOfBirth": "1962-01-15",
+        "email": "alex_f@darakjy.org",
+        "password": "********" 
+      }
+]

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/model/User ';
 import { HttpClientService } from 'src/app/service/http-client.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import users from '../../../assets/mockData/usersData.json'
 
 @Component({
   selector: 'app-users',
@@ -11,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class UsersComponent implements OnInit {
 
 
-  users: Array<User>;
+  users: Array<any>;
   action: string;
   selectedUser: User;
   constructor(private httpClientService: HttpClientService,
@@ -19,7 +20,7 @@ export class UsersComponent implements OnInit {
     private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-
+    this.users = users;
     this.refreshData();
   }
 

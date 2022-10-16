@@ -7,4 +7,4 @@ export class Manager {
     email:string;
     department: string; 
     password: string;
-  }
+}
