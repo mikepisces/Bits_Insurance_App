@@ -7,6 +7,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Install Visual studio Code 
 Use below link for details
 https://ccbill.com/kb/install-angular-on-windows
+3. Clone project and open in Visual Studio code
+4. Go to Terminal tab in Menu -> New Terminal
+5. Run `npm install`
+6. Run `npm start' once installation completed 
+7. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Development server
 
