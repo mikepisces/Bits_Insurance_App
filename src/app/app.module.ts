@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdduserComponent } from './admin/users/adduser/adduser.component';
 import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
 import { InsuranceComponent } from './admin/insurance/insurance.component';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InsuranceComponent } from './admin/insurance/insurance.component';
     UsersComponent,
     AdduserComponent,
     ViewuserComponent,
-    InsuranceComponent
+    InsuranceComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,

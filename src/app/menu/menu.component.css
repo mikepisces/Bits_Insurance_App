@@ -1,0 +1,11 @@
+.col-100vh {
+    height: 100%;
+}
+
+.bg-grey {
+    background-color: gainsboro;
+}
+
+.bordered-right {
+    border-right : 1px solid gainsboro;
+}
