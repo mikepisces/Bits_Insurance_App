@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientService } from 'src/app/service/http-client.service';
+// import { HttpClientService } from 'src/app/service/http-client.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
@@ -10,7 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor(private httpClientService: HttpClientService,
+  constructor(
+    // private httpClientService: HttpClientService,
     private router: Router,
     private activatedRoute: ActivatedRoute) { }
 
