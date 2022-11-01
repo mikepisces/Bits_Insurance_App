@@ -9,7 +9,7 @@
           <th>Plan Term</th>
           <th>Commission charges (%)</th>
           <th></th>
-          <th *ngIf = "1==0"></th>
+          <th></th>
       </tr>
   </thead>
 
@@ -21,8 +21,8 @@
           <!-- <td class="align-middle">{{ 123 | currency:'USD'}}</td> -->
           <td class="align-middle">{{policy.policyPlanTerm}}</td>
           <td class="align-middle">{{policy.commissionPercent}}</td>
-          <td class="align-middle"><a href="#" class="link-dark">Edit Details</a></td>
-          <td *ngIf = "1==0" class="align-middle"><a href="#" class="link-dark">Buy Policy</a></td>
+          <td class="align-middle"><a href="#" class="link-dark">Check Details</a></td>
+          <td class="align-middle"><a href="#" class="link-danger">Buy Policy</a></td>
       </tr>
   </tbody>
 </table>

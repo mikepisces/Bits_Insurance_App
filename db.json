@@ -1,0 +1,29 @@
+{
+  "managers": [
+    {
+      "firstName": "adfasf",
+      "lastName": "adsfsaf",
+      "mobileNumber": "adfsaf",
+      "landlineNumber": "adfssadf",
+      "email": "adsfkasdf",
+      "department": "asdfasdf",
+      "password": "afsadfds",
+      "managerId": 1666121445643,
+      "id": 1666121445643
+    }
+  ],
+  "agents": [
+    {
+      "firstName": "a",
+      "lastName": "b",
+      "mobileNumber": "c",
+      "landlineNumber": "d",
+      "email": "e",
+      "officePhone": "f",
+      "reportingManagerId": "g",
+      "password": "h",
+      "agentId": 1666154021481,
+      "id": 1666154021481
+    }
+  ]
+}

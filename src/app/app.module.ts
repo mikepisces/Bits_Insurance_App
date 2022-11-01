@@ -11,18 +11,24 @@ import { AdduserComponent } from './admin/users/adduser/adduser.component';
 import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
 import { InsuranceComponent } from './admin/insurance/insurance.component';
 import { OverviewComponent } from './overview/overview.component';
-import { AgentsComponent } from './admin/agents/agents.component';
+import { AddManagerComponent } from './admin/manager/add-manager/add-manager.component';
+import { ViewManagerComponent } from './admin/manager/view-manager/view-manager.component';
+import { AddAgentComponent } from './admin/agent/add-agent/add-agent.component';
+import { ViewAgentComponent } from './admin/agent/view-agent/view-agent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    AgentsComponent,
     UsersComponent,
     AdduserComponent,
     ViewuserComponent,
     InsuranceComponent,
-    OverviewComponent
+    OverviewComponent,
+    AddManagerComponent,
+    ViewManagerComponent,
+    AddAgentComponent,
+    ViewAgentComponent,
   ],
   imports: [
     BrowserModule,
