@@ -24,13 +24,16 @@
     <div class="container-fluid bg-white">
     <div class="row">
         <div class="col-2 pr-0 col-100vh">
-            <nav class ="navbar bg-white bordered-right col-100vh">
+            <nav class ="navbar bg-white  col-100vh">
                 <ul class ="nav navbar-nav col-100vh">
                 <li class ="nav-item">
                 <a class ="nav-link" href="#"> Home </a>
                 </li>
                 <li class ="nav-item">
-                    <a routerLink="/admin/users" class="nav-link navbar-dark">View Users</a>
+                    <a routerLink="/admin/agents" class ="nav-link">View Agents</a>
+                    </li>
+                <li class ="nav-item">
+                    <a routerLink="/admin/customers" class="nav-link navbar-dark">View Customers</a>
                 </li>
                 <li class ="nav-item">
                 <a routerLink="/admin/view-insurance" class ="nav-link">View Insurance</a>
@@ -39,7 +42,7 @@
                 </nav>
 
         </div>
-        <div class="col-10">
+        <div class="col-10 bordered-left col-100vh">
             <div class="container">
         <router-outlet></router-outlet>
     </div>

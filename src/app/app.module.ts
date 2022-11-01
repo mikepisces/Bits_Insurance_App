@@ -11,11 +11,13 @@ import { AdduserComponent } from './admin/users/adduser/adduser.component';
 import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
 import { InsuranceComponent } from './admin/insurance/insurance.component';
 import { OverviewComponent } from './overview/overview.component';
+import { AgentsComponent } from './admin/agents/agents.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
+    AgentsComponent,
     UsersComponent,
     AdduserComponent,
     ViewuserComponent,

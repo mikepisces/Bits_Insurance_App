@@ -1,0 +1,24 @@
+[
+    {
+        "agentId":1 ,
+        "firstName":"Josephine",
+        "lastName":"Darakjy" ,
+        "mobileNumber": "810-292-9388",
+        "landlineNumber": "810-374-9840",  
+        "email": "josep_d@darakjy.org",
+        "officePhone": "810-374-9840",
+        "reportingManagerId": 1,
+        "password": "********" 
+      },
+      {
+        "agentId":2 ,
+        "firstName":"Mike",
+        "lastName":"Secor" ,
+        "mobileNumber": "810-292-9388",
+        "landlineNumber": "810-374-9840",  
+        "email": "mike_s@darakjy.org",
+        "officePhone": "810-374-9840",
+        "reportingManagerId": 1,
+        "password": "********" 
+      }
+]
