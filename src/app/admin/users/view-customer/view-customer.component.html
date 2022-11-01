@@ -1,0 +1,85 @@
+<!-- <h4>Users</h4> -->
+<!-- <a class="btn btn-primary mb-3" id ="b2" (click)="addUser()">Add User</a> -->
+<!-- <div class="header">
+  <h4>Customers</h4>
+  <button class="btn btn-success" routerLink="/admin/add-user">Add new customer</button>
+</div>
+<div class="container row"> -->
+    <!-- <div   class="col-md-6"> -->
+    <!-- <table class="table table-striped">
+      <thead class="table-primary">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Mobile Number</th>
+        <th>Landline number</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Pin Code</th>
+        <th>State</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Password</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngFor="let user of users" >
+        <td class="align-middle">{{user.customerId}}</td>
+        <td class="align-middle">{{user.firstName }}</td>
+        <td class="align-middle">{{user.mobileNumber }}</td>
+        <td class="align-middle">{{user.landlineNumber }}</td>
+        <td class="align-middle">{{user.address }}</td>
+        <td class="align-middle">{{user.city }}</td>
+        <td class="align-middle">{{user.pinCode }}</td>
+        <td class="align-middle">{{user.state }}</td>
+        <td class="align-middle">{{user.dateOfBirth }}</td>
+        <td class="align-middle">{{user.email }}</td>
+        <td class="align-middle">{{user.password }}</td> -->
+        <!-- <td><button type="button" class="btn btn-primary" (click)="viewUser(user.id)">Show Details</button></td> -->
+      <!-- </tr>
+      </tbody>
+    </table> -->
+  <!-- </div>
+  <div   class="col-md-6">
+    <app-adduser *ngIf="action === 'add'"  [user]="selectedUser"  (userAddedEvent)="refreshData()"></app-adduser>
+    <app-viewuser *ngIf="action === 'view'" [user]="selectedUser" (userDeletedEvent)="refreshData()"></app-viewuser>
+  </div> -->
+<!-- </div> -->
+
+
+<div class="header">
+  <h4>Customers</h4>
+  <button class="btn btn-success" routerLink="/admin/add-customer">Add new customer</button>
+</div>
+<table class="table table-striped">
+  <thead class="table-primary ">
+    <tr>
+      <th *ngFor="let header of tableHeader">{{header.displayTitle}}</th>
+      <th>
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of tableData">
+      <ng-container *ngFor="let header of tableHeader">
+        <td>{{data[header['key']]}}</td>
+      </ng-container>
+      <td style="text-align: center;">
+        <span style="font-size: 20px; cursor: pointer;" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+        </span>
+        <div class="dropdown-menu">
+          <a [routerLink]="['/admin', 'edit-customer', data.customerId]" class="dropdown-item" style="cursor: pointer;">
+            <i class="fa-sharp fa-solid fa-pencil mr-1"></i>
+            Edit</a>
+          <a class="dropdown-item" (click)="onDelete(data)" style="cursor: pointer;">
+            <i class="fa-sharp fa-solid fa-trash mr-1"></i>
+            Delete</a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
