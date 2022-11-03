@@ -94,9 +94,9 @@
             placeholder="Enter Password">
         </div>
       </div>
-      <input type="hidden" name="agentId" ngModel>
+      <input type="hidden" name="customerId" ngModel>
       <!-- for json-server to maintain -->
-      <input type="hidden" name="id" ngModel>
+      <!-- <input type="hidden" name="id" ngModel> -->
     </div>
     <button type="button" class="btn btn-danger mr-3" routerLink="/admin/view-customers">Cancel</button>
     <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>

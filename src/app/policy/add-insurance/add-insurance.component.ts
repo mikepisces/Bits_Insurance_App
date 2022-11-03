@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { PolicyPlan } from 'src/app/model/PolicyPlan';
 import { InsuranceService } from '../insurance.service';
 
 
@@ -30,7 +31,8 @@ export class AddInsuranceComponent implements OnInit {
 
   getPolicyPlan(id) {
     this.service.getPolicyPlan(id)
-      .subscribe((data) => {
+      .subscribe((data: PolicyPlan) => {
+          console.log(data)
         this.form.setValue(data);
       });
   }
@@ -40,10 +42,11 @@ export class AddInsuranceComponent implements OnInit {
     let CustomerId = new Date().getTime();
     //data.managerId = managerId;
     //data.id = managerId; // for json-server to maintain
-    let PolicyId = new Date().getTime();
-    data.policyPlanId = PolicyId;
-    data.id = PolicyId; // for json-server to maintain
+    // let PolicyId = new Date().getTime();
+    // data.policyPlanId = PolicyId;
+    // data.id = PolicyId; // for json-server to maintain
     if (this.title == 'Add') {
+      console.log(data)
       this.service.addPolicyPlan(data)
         .subscribe((response) => {
           this.router.navigate(['/admin/view-insurance']);

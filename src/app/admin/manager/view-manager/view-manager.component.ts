@@ -15,15 +15,15 @@ export class ViewManagerComponent implements OnInit {
       displayTitle: "Manager Id"
     },
     {
-      key: "firstName",
+      key: "mgrFname",
       displayTitle: "First Name"
     },
     {
-      key: "lastName",
+      key: "mgrLname",
       displayTitle: "Last Name"
     },
     {
-      key: "mobileNumber",
+      key: "mgrMobile",
       displayTitle: "Mobile Number"
     },
     {
@@ -31,15 +31,15 @@ export class ViewManagerComponent implements OnInit {
       displayTitle: "Landline Number"
     },
     {
-      key: "email",
+      key: "emailAddress",
       displayTitle: "Email Address"
     },
     {
-      key: "department",
+      key: "mgrDept",
       displayTitle: "Department"
     },
     {
-      key: "password",
+      key: "appPwd",
       displayTitle: "Password"
     },
   ];

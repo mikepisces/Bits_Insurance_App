@@ -6,24 +6,24 @@ import { Injectable } from '@angular/core';
 })
 export class CustomerService {
 
-  serverUrl = 'http://localhost:3000'
+  serverUrl = 'http://localhost:8080'
 
   constructor(private http: HttpClient) { }
 
   addCustomer(data) {
-    return this.http.post(`${this.serverUrl}/customers`, data)
+    return this.http.post(`${this.serverUrl}/customer`, data)
   }
 
   getCustomer(id) {
-    return this.http.get(`${this.serverUrl}/customers/${id}`)
+    return this.http.get(`${this.serverUrl}/customer/${id}`)
   }
 
   getAllCustomers() {
-    return this.http.get(`${this.serverUrl}/customers`)
+    return this.http.get(`${this.serverUrl}/customer`)
   }
 
   updateCustomer(id, data) {
-    return this.http.put(`${this.serverUrl}/customers/${id}`, data)
+    return this.http.post(`${this.serverUrl}/customer`, data)
   }
 
   deleteCustomer(id) {

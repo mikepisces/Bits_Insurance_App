@@ -25,7 +25,7 @@ export class ViewPolicyComponent implements OnInit {
       displayTitle: "Customer ID"
     },
     {
-      key: "agentId",
+      key: "agentid",
       displayTitle: "Agent ID"
     },
     {
@@ -74,6 +74,7 @@ export class ViewPolicyComponent implements OnInit {
   getAllPolicies() {
     this.service.getAllPolicies()
       .subscribe((data: any) => {
+        console.log(data)
         this.tableData = data;
       })
   }

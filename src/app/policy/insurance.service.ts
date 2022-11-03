@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class InsuranceService {
 
-  serverUrl = 'http://localhost:3000'
+  serverUrl = 'http://localhost:8080'
 
   constructor(private http: HttpClient) { }
 
@@ -23,7 +23,7 @@ export class InsuranceService {
   }
 
   updatePolicyPlan(id, data) {
-    return this.http.put(`${this.serverUrl}/policyPlan/${id}`, data)
+    return this.http.post(`${this.serverUrl}/policyPlan`, data)
   }
 
   deletePolicyPlan(id) {

@@ -16,7 +16,7 @@ export class ViewCustomerComponent implements OnInit {
       displayTitle: "Customer Id"
     },
     {
-      key: "fistName",
+      key: "firstName",
       displayTitle: "First Name"
     },
     {
@@ -40,7 +40,7 @@ export class ViewCustomerComponent implements OnInit {
       displayTitle: "City"
     },
     {
-      key: "pincode",
+      key: "pinCode",
       displayTitle: "Pin Code"
     },
     {
@@ -48,7 +48,7 @@ export class ViewCustomerComponent implements OnInit {
       displayTitle: "State"
     },
     {
-      key: "dateOfbirth",
+      key: "dateOfBirth",
       displayTitle: "DOB"
     },
     {

@@ -6,28 +6,28 @@ import { Injectable } from '@angular/core';
 })
 export class PolicyService {
 
-  serverUrl = 'http://localhost:3000'
+  serverUrl = 'http://localhost:8080'
 
   constructor(private http: HttpClient) { }
 
   // addPolicy(data) {
-  //   return this.http.post(`${this.serverUrl}/policies`, data)
+  //   return this.http.post(`${this.serverUrl}/policy`, data)
   // }
 
   getPolicy(id) {
-    return this.http.get(`${this.serverUrl}/policies/${id}`)
+    return this.http.get(`${this.serverUrl}/policy/${id}`)
   }
 
   getAllPolicies() {
-    return this.http.get(`${this.serverUrl}/policies`)
+    return this.http.get(`${this.serverUrl}/policy`)
   }
 
   updatePolicy(id, data) {
-    return this.http.put(`${this.serverUrl}/policies/${id}`, data)
+    return this.http.post(`${this.serverUrl}/policy`, data)
   }
 
   deletePolicy(id) {
-    return this.http.delete(`${this.serverUrl}/policies/${id}`)
+    return this.http.delete(`${this.serverUrl}/policy/${id}`)
   }
 
 }

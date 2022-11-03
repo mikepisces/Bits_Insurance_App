@@ -36,9 +36,9 @@ export class AddCustomerComponent implements OnInit {
   onSubmit(form: NgForm) {
     let data = form.value;
     //--------------
-    let CustomerId = new Date().getTime();
-    data.customerId = CustomerId;
-    data.id = CustomerId; // for json-server to maintain
+    // let CustomerId = new Date().getTime();
+    // data.customerId = CustomerId;
+    // data.id = CustomerId; // for json-server to maintain
     //----------------
     if (this.title == 'Add') {
       this.service.addCustomer(data)

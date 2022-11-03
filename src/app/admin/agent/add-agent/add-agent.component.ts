@@ -35,9 +35,9 @@ export class AddAgentComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     let data = form.value;
-    let agentId = new Date().getTime();
-    data.agentId = agentId;
-    data.id = agentId; // for json-server to maintain
+    // let agentId = new Date().getTime();
+    // data.agentId = agentId;
+    // data.id = agentId; // for json-server to maintain
     if (this.title == 'Add') {
       this.service.addAgent(data)
         .subscribe((response) => {

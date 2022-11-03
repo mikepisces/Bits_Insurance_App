@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Manager } from 'src/app/model/Manager';
 import { ManagerService } from '../manager.service';
 
 @Component({
@@ -28,16 +29,19 @@ export class AddManagerComponent implements OnInit {
 
   getManager(id) {
     this.service.getManager(id)
-      .subscribe((data) => {
+      .subscribe((data: Manager) => {
+        if(data.landlineNumber == null){
+          data.landlineNumber = ''
+        }
         this.form.setValue(data);
       });
   }
 
   onSubmit(form: NgForm) {
     let data = form.value;
-    let managerId = new Date().getTime();
-    data.managerId = managerId;
-    data.id = managerId; // for json-server to maintain
+    // // let managerId = new Date().getTime();
+    // data.managerId = managerId;
+    // data.id = managerId; // for json-server to maintain
     if (this.title == 'Add') {
       this.service.addManager(data)
         .subscribe((response) => {
