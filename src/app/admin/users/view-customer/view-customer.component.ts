@@ -55,11 +55,7 @@ export class ViewCustomerComponent implements OnInit {
     {
       key: "email",
       displayTitle: "Email Address"
-    },
-    {
-      key: "password",
-      displayTitle: "Password"
-    },
+    }
   ];
 
 

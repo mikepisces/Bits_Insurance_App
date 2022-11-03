@@ -41,11 +41,11 @@ export class ViewAgentComponent implements OnInit {
     {
       key: "reportingManagerId",
       displayTitle: "Report Manager Id"
-    },
-    {
-      key: "password",
-      displayTitle: "Password"
-    },
+    }
+    // {
+    //   key: "password",
+    //   displayTitle: "Password"
+    // },
   ];
 
 

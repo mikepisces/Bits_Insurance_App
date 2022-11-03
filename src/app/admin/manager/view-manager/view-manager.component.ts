@@ -37,11 +37,11 @@ export class ViewManagerComponent implements OnInit {
     {
       key: "mgrDept",
       displayTitle: "Department"
-    },
-    {
-      key: "appPwd",
-      displayTitle: "Password"
-    },
+    }
+    // {
+    //   key: "appPwd",
+    //   displayTitle: "Password"
+    // },
   ];
 
 
