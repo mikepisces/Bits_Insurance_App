@@ -1,0 +1,83 @@
+<div class="container">
+    <h4 class="mt-3">{{title}} Policy</h4>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="policyPlanId">Policy Plan Id</label>
+            <input type="number" class="form-control" ngModel required id="policyPlanId" name="policyPlanId"
+              placeholder="Enter Policy Plan Id">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="customerId">Customer Id</label>
+            <input type="number" class="form-control" ngModel required id="customerId" name="customerId"
+              placeholder="Enter Customer Id">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="agentid">Agent Id</label>
+            <input type="number" class="form-control" ngModel required id="agentid" name="agentid"
+              placeholder="Enter Agent Id">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="policyDescription">Policy Plan Name</label>
+            <input type="text" class="form-control" ngModel required id="policyDescription" name="policyDescription"
+              placeholder="Enter Policy Plan Name">
+          </div>
+        </div>
+      
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="policyIssueDate">Policy Issue Date</label>
+            <input type="text" class="form-control" ngModel required id="policyIssueDate" name="policyIssueDate"
+              placeholder="Policy IssueDate (DD/MM/YYYY)">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="policyEndDate">Policy End Date</label>
+            <input type="text" class="form-control" ngModel required id="policyEndDate" name="policyEndDate"
+              placeholder="policy end Date (DD/MM/YYYY)">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="policyPremiumAmount">Policy Premium amount</label>
+            <input type="number" class="form-control" ngModel required id="policyPremiumAmount" name="policyPremiumAmount"
+              placeholder="Enter Policy Premium amount">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="policyPremiumFrequency">Policy Premium Frequency</label>
+            <input type="number" class="form-control" ngModel required id="policyPremiumFrequency" name="policyPremiumFrequency"
+              placeholder="Enter Policy Premium Frequency">
+          </div>
+        </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="termsAndConditions">Terms and Conditions</label>
+              <input type="text" class="form-control" ngModel required id="termsAndConditions" name="termsAndConditions"
+                placeholder="Enter Policy Terms and Conditions">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="policyStatus">Policy Status</label>
+              <input type="text" class="form-control" ngModel required id="policyStatus" name="policyStatus"
+                placeholder="Enter Policy Status">
+            </div>
+          </div>
+        <!-- <input type="hidden" name="policyId" ngModel> -->
+    
+        <!-- <input type="hidden" name="id" ngModel> -->
+      </div>
+      <button type="button" class="btn btn-danger mr-3" routerLink="/admin/view-policies">Cancel</button>
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+    </form>
+  </div>
