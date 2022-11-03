@@ -13,6 +13,7 @@ https://ccbill.com/kb/install-angular-on-windows
 6. Run `npm start' once installation completed 
 7. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
