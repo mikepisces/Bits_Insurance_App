@@ -27,7 +27,7 @@ export class CustomerService {
   }
 
   deleteCustomer(id) {
-    return this.http.delete(`${this.serverUrl}/users/${id}`)
+    return this.http.delete(`${this.serverUrl}/customer/${id}`)
   }
 
 }

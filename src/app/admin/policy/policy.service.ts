@@ -10,9 +10,9 @@ export class PolicyService {
 
   constructor(private http: HttpClient) { }
 
-  // addPolicy(data) {
-  //   return this.http.post(`${this.serverUrl}/policy`, data)
-  // }
+  addPolicy(data) {
+    return this.http.post(`${this.serverUrl}/policy`, data)
+  }
 
   getPolicy(id) {
     return this.http.get(`${this.serverUrl}/policy/${id}`)
@@ -23,7 +23,7 @@ export class PolicyService {
   }
 
   updatePolicy(id, data) {
-    return this.http.post(`${this.serverUrl}/policy`, data)
+    return this.http.put(`${this.serverUrl}/policy/${id}`, data)
   }
 
   deletePolicy(id) {

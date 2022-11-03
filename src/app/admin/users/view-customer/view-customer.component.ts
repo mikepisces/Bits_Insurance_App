@@ -3,6 +3,7 @@ import { Customer } from 'src/app/model/Customer';
 import { CustomerService } from '../customer.service';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-view-customer',
   templateUrl: './view-customer.component.html',
@@ -64,7 +65,7 @@ export class ViewCustomerComponent implements OnInit {
 
   tableData: Customer[] = []
 
-  constructor(private service: CustomerService) { }
+  constructor(private service: CustomerService , private router: Router) { }
 
   ngOnInit() {
     this.getAllCustomers();
@@ -79,8 +80,8 @@ export class ViewCustomerComponent implements OnInit {
 
   onDelete(row: Customer) {
     this.service.deleteCustomer(row.customerId)
-      .subscribe((data) => {
-        this.getAllCustomers();
+      .subscribe((response) => {
+        this.router.navigate(['/admin/view-customers']);
       })
   }
 

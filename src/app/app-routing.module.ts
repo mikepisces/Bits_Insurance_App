@@ -11,6 +11,7 @@ import { ViewCustomerComponent } from './admin/users/view-customer/view-customer
 import { AddInsuranceComponent } from './policy/add-insurance/add-insurance.component';
 import { ViewInsuranceComponent } from './policy/view-insurance/view-insurance.component';
 import { ViewPolicyComponent } from './admin/policy/view-policy/view-policy.component';
+import { AddPolicyComponent } from './admin/policy/add-policy/add-policy.component';
 
 const routes: Routes = [
   { path: '', component: OverviewComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'admin/add-agent', component: AddAgentComponent },
   { path: 'admin/edit-agent/:id', component: AddAgentComponent },
   { path: 'admin/view-policies', component: ViewPolicyComponent },
+  { path: 'admin/add-policies', component: AddPolicyComponent },
 ];
 
 @NgModule({

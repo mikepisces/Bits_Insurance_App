@@ -17,6 +17,7 @@ import { ViewAgentComponent } from './admin/agent/view-agent/view-agent.componen
 import { AddInsuranceComponent } from './policy/add-insurance/add-insurance.component';
 import { ViewInsuranceComponent } from './policy/view-insurance/view-insurance.component';
 import { ViewPolicyComponent } from './admin/policy/view-policy/view-policy.component';
+import { AddPolicyComponent } from './admin/policy/add-policy/add-policy.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ViewPolicyComponent } from './admin/policy/view-policy/view-policy.comp
     ViewManagerComponent,
     AddAgentComponent,
     ViewAgentComponent,
-    ViewPolicyComponent
+    ViewPolicyComponent,
+    AddPolicyComponent
   ],
   imports: [
     BrowserModule,

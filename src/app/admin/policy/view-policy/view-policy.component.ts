@@ -45,10 +45,6 @@ export class ViewPolicyComponent implements OnInit {
       displayTitle: "Premium Amount"
     },
     {
-      key: "state",
-      displayTitle: "state"
-    },
-    {
       key: "policyPremiumFrequency",
       displayTitle: "Premium Frequency"
     },
@@ -74,7 +70,6 @@ export class ViewPolicyComponent implements OnInit {
   getAllPolicies() {
     this.service.getAllPolicies()
       .subscribe((data: any) => {
-        console.log(data)
         this.tableData = data;
       })
   }

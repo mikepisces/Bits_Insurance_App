@@ -2,9 +2,9 @@ export class Policy {
     policyId: number;
     policyPlanId: number;
     customerId: number;
-    agentId: number;
+    agentid: number;
     policyDescription: string;
-    policyIssueDate: Date;  
+    policyIssueDate: Date;  c
     policyEndDate: Date; 
     policyPremiumAmount: number; 
     policyPremiumFrequency: number; 
